@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emerald Thumb</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_in_out">Sign In/Out</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Dynamic ET Strings -->
+    <string name="waterlvlval">1000</string>
+    <string name="humidlvlval">Dry!</string>
+    <string name="plantname">Planty</string>
+
+    <!-- Static ET Strings -->
+    <string name="water_plant">Water Plant</string>
+    <string name="myplantname">My Plant Name</string>
+    <string name="refresh_stats">Refresh plant metrics and image</string>
+    <string name="water_level">Amount of water remaining</string>
+    <string name="humidity">Detected moisture level</string>
+    <string name="waterlvl">Water Level (mL)</string>
+    <string name="humidlvl">Soil Moisture</string>
+    <string name="plant_pic">Most recent picture saved</string>
+    <string name="introtext">Emerald Thumb</string>
+    <string name="loading">Loading…</string>
+    <string name="nologin">Please log in or register</string>
+    <string name="temp"> °C</string>
+
+
+</resources>

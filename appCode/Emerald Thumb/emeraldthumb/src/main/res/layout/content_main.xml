@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green" >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAuth2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="23dp"
+        android:contentDescription="@string/sign_in_out"
+        android:onClick="fabAuthOnClick"
+        android:src="@drawable/ic_baseline_lock"
+        app:fabCustomSize="60dp"
+        app:fabSize="auto" />
+
+    <ImageView
+        android:id="@+id/plantpic"
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
+        android:layout_below="@+id/myplant"
+        android:background="@drawable/ic_launcher_background"
+        android:contentDescription="@string/plant_pic"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_leaf" />
+
+    <LinearLayout
+        android:id="@+id/myplant"
+        android:layout_width="@dimen/browser_actions_context_menu_max_width"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:background="@color/teal_700"
+        android:gravity="top|center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/userplantname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="@string/plantname"
+            android:autofillHints="name"
+            android:hint="@string/myplantname"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantpic"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/waterlvl"
+        android:backgroundTint="@color/teal_200"
+        android:clickable="true"
+        android:contentDescription="@string/water_plant"
+        android:onClick="fabWaterOnClick"
+        android:src="@drawable/ic_baseline_water"
+        app:fabCustomSize="80dp"
+        app:fabSize="auto" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRefresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/plantpic"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/gray"
+        android:contentDescription="@string/refresh_stats"
+        android:clickable="true"
+        android:onClick="fabRefreshOnClick"
+        android:src="@drawable/ic_baseline_sync" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fabWater"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/waterlvl"
+        android:text="@string/water_plant"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/templvlval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/plantpic"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/degrees"
+        android:text="@string/temp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/degrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/plantpic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="301dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/temp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/waterlvl"
+        android:layout_width="126dp"
+        android:layout_height="112dp"
+        android:layout_below="@+id/plantpic"
+        android:layout_marginTop="0dp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/water_level"
+        android:src="@drawable/ic_baseline_waves" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@+id/plantpic"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/waterlvl"
+        android:text="@string/waterlvl"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/waterlvlval"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plantpic"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@+id/waterlvl"
+        android:inputType="number"
+        android:text="@string/waterlvlval"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/humidlvl"
+        android:layout_width="126dp"
+        android:layout_height="112dp"
+        android:layout_below="@+id/waterlvl"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/humidity"
+        android:src="@drawable/ic_baseline_waves" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waterlvl"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@+id/humidlvl"
+        android:text="@string/humidlvl"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/humidlvlval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waterlvl"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="89dp"
+        android:layout_toEndOf="@+id/humidlvl"
+        android:text="@string/humidlvlval"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>
